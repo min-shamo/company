@@ -1,4 +1,5 @@
-﻿html{font-size: 100rem;}
+﻿*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }
+html{font-size: 100rem;}
 body{font-size: 0.14rem;/*实际相当于14rem*/}
 body{
     width: 100%;
@@ -17,8 +18,9 @@ div {
     background-size:100% 100%;
 }
 .topPart{
-    /*background-image:url(images/image_myhonor/img_bg@2x.jpg);*/
-    background-image: url('./image_myhonor/img_bg@2x.jpg');
+    /*background-image:url(../images/image_myhonor/img_bg@2x.jpg);*/
+    /*background-image: url('./image_myhonor/img_bg@2x.jpg');*/
+    background-color:#27a2c4;
     float:left;
     height:auto;
     width:100%;
@@ -35,7 +37,7 @@ div {
     height:1rem;
     float:left;
     padding-left:0.46rem;
-    padding-bottom:0.36rem; 
+    padding-bottom:0.6rem; 
     border-radius:50%;
     vertical-align: middle;
 }
@@ -67,16 +69,16 @@ div {
     color:#ffffff;
     margin-left:0.26rem;
     float: left;
-    padding-bottom: 0.36rem;
+    padding-bottom: 0.6rem;
 }
 .no{
-    margin-top: 0.36rem;
+    margin-top: 0.4rem;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.2);
-    padding: 0.18rem 00rem;
+    padding: 0.12rem 00rem;
     height: auto;
 }
 .table{
@@ -85,7 +87,7 @@ div {
 }
 #table_title{
     height:0.86rem;
-    border-bottom:solid 2px #eee;
+    border-bottom:solid 1px #eee;
     padding-left:0.24rem;
 }
 /*#table_title span{
@@ -100,6 +102,7 @@ div {
     width: 33.33%;
     box-sizing: border-box;
     text-align: center;
+   
 }
 
 .score1 {
@@ -120,7 +123,7 @@ div {
 
 .proportion3 {
     font-size: 0.18rem;
-    margin-top: 0.10rem;
+    margin-top: 0.08rem;
     color: #fffffe;
     opacity: 0.6;
 }
@@ -130,7 +133,7 @@ div {
 }
 #prize_title{
     height:0.86rem;
-    border-bottom:solid 2px #eee;
+    border-bottom:solid 1px #eee;
     padding-left:0.24rem;
     margin-top:0.20rem;
 }
@@ -189,6 +192,7 @@ div {
     color:#666;
     text-align: center;
     clear: both;
+    cursor:pointer;
 }
 .more img {
     width:0.24rem;
@@ -217,19 +221,20 @@ div {
 }
 #RandP_title{
     height:0.86rem;
-    border-bottom:solid 2px #eee;
+    border-bottom:solid 1px #eee;
     padding-left:0.24rem;
     margin-top:0.20rem;    
 }
 .titles{
     font-size:0.28rem;
-    color:#000;
+    color:#27a2c4;
     line-height:0.86rem;
     margin-left: 0.1rem;
     vertical-align: middle;
     display: inline-block;
     margin-top:0.002rem;
     width: 20%;
+    cursor:pointer;
 }
 .info_last{
     border-bottom:solid 1px #eee;
@@ -277,6 +282,11 @@ vertical-align: middle
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.law_title{
+    float: left;
+    width: 20%;
+    display: block;
+}
 .date{
     color:#000;
     font-size:0.26rem;
@@ -317,6 +327,10 @@ vertical-align: middle
 .law_info{
     font-size:0.24rem;
     color:#000;
+    padding-right: 0.6rem;
+    display: block;
+    width: 70%;
+    float: left;
 }
 .reason{
     float: left;
@@ -351,7 +365,7 @@ vertical-align: middle
 }
 #improve_title{
     height:0.86rem;
-    border-bottom:solid 2px #eee;
+    border-bottom:solid 1px #eee;
     padding-left:0.24rem;
     margin-top:0.20rem;
 }
@@ -444,7 +458,7 @@ vertical-align: middle
 }
 #process_title{
     height:0.86rem;
-    border-bottom:solid 2px #eee;
+    border-bottom:solid 1px #eee;
     padding-left:0.24rem;
     margin-top:0.20rem;
 }
@@ -557,7 +571,7 @@ vertical-align: middle
 .counts1,
 .counts2{
     font-size:0.26rem;
-    color:#999;
+    color:#27a2c4;
 }
 .title_img{
     vertical-align: middle;
@@ -570,3 +584,78 @@ vertical-align: middle
     width: 50%;
     text-align: right;
 }
+ul{
+    list-style: none;
+
+}
+.prize_list{
+    margin: 0;
+    padding: 0.30rem 0.34rem;
+}
+.prize_list li{
+    display: inline-block; 
+    margin-right: 0.58rem;
+}
+.prize_list li:nth-child(5n){
+    margin-right: 0;
+}
+.prize_list li:nth-child(5n+6){
+    margin-top: 0.20rem;
+}
+.prize_list img{
+    height: 0.9rem;
+    width: 0.9rem;
+}
+.count{
+    width: 0.36rem;
+    height: 0.36rem;
+    position: absolute;
+    left: 0.6rem;
+    border-radius: 50%;
+    background: #f15a4a;
+    color: #fff;
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.36rem;
+}
+#RandP_body{
+    position: relative;
+}
+#RandP_body span{
+    display: inline-block;
+    position: absolute;
+    left: 0.24rem;
+    top:0.3rem;
+    font-size: 0.28rem;
+    color: #333333;
+}
+#RandP_title .tips .counts2{
+    cursor: pointer;
+}
+.R_list,
+.p_list{
+    margin: 0rem 0em 0rem 1.4rem;
+    padding: 0.30rem 0.34rem;
+    display: inline-block;
+    border-bottom: 1px solid #eee;
+    width:100%;
+}
+.R_list li,
+.p_list li{
+    display: inline-block;
+    margin-right: 0.58rem;
+}
+.R_list li:nth-child(4n),
+.p_list li:nth-child(4n){
+    margin-right: 0;
+}
+.R_list li:nth-child(4n+5),
+.p_list li:nth-child(4n+5){
+    margin-top: 0.20rem;
+}
+.R_list img,
+.p_list img{
+    height: 0.9rem;
+    width: 0.9rem;
+}
+
