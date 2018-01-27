@@ -882,7 +882,7 @@
                 obj.push(new reward("最佳高效确认奖", "queren", 0));
                 obj.push(new reward("最佳文档输出奖", "wendang", 0));
                 obj.push(new reward("最佳会议纪要奖", "huiyi", 0));
-                obj.push(new reward("最佳信息化建设奖", "xinxihua", 0));
+                obj.push(new reward("最佳信息化建议奖", "xinxihua", 0));
                 obj.push(new reward("最佳项目管理奖", "xiangmu", 0));
                 obj.push(new reward("最佳JIRA得分奖", "jiradefen", 0));
                 obj.push(new reward("最佳JIRA评分奖", "jirapingfen", 0));
@@ -893,16 +893,12 @@
                 //     $('#prize_main').append('<div style="display:none" class="no_record"><span>暂无记录</span></div>');
                 // }
                 // else {
-                var splityear = new Date();
                 // var split = splityear.getFullYear;
-                var split = "2017";
                 for (var i = 0; i < prize.length; i++) {
-                    var year = prize[i].Month.substring(0, 4);
-                    if (year == split) {
                         for (var j = 0; j < prize[i].Result.length; j++) {
                             medal.push(prize[i].Result[j].RewardName);
                         }
-                    }
+                    
                 }
                 for (var i = 0; i < 11; i++) {
                     for (var j = 0; j < medal.length; j++) {
@@ -911,12 +907,12 @@
                         }
                     }
                     if (obj[i].count > 0) {
-                        $('.prize_list').append('<li><div style="position:relative;height:0.9rem"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png"></div></li>')
+                        $('.prize_list').append('<li><div style="position:relative;height:0.9rem"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="Prize.html?prize='+obj[i].img+'"></div></li>')
                     }
                 }
                 for (var i = 0; i < 11; i++) {
                     if (obj[i].count == 0) {
-                        $('.prize_list').append('<li><div style="height:0.9rem"><img src="./image_myhonor/icon_' + obj[i].img + '_02.png"></div></li>')
+                        $('.prize_list').append('<li><div style="height:0.9rem"><img src="./image_myhonor/icon_' + obj[i].img + '_02.png" ></div></li>')
                     }
                 }
                 // if (i != 0) {
@@ -1001,11 +997,11 @@
                             }
                         }
                         if (obj[i].count > 0 && i < 8) {
-                            $('.R_list').append('<li><div style="position:relative;height:0.9rem"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png"></div></li>');
+                            $('.R_list').append('<li><div style="position:relative;"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="Prize.html?OA='+obj[i].img+'"><span class="R_name">'+obj[i].name+'</span></div></li>');
                             R_times+=obj[i].count;
                         }
                         else if (obj[i].count > 0 && i >= 8) {
-                            $('.p_list').append('<li><div style="position:relative;height:0.9rem"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png"></div></li>');
+                            $('.p_list').append('<li><div style="position:relative;"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="Prize.html?OA='+obj[i].img+'"><span class="P_name">'+obj[i].name+'</span></div></li>');
                             P_times+=obj[i].count;
                         }
                     }
@@ -1097,7 +1093,7 @@
                 var improve_data = result;//obj.DataTable['diffgr:diffgram'].NewDataSet.Table;
                 if (!result || improve_data.length == 0) {
                     $('#improve').find('span').eq(1).remove();
-                    $('#improve').append('<div style="display:none" class="no_record"><span>暂无记录</span></div>');
+                    $('#improve').append('<div class="no_record"><span>暂无记录</span></div>');
 
                 }
                 else {
@@ -1145,7 +1141,7 @@
             },
             error: function (error, errorstate) {//未完成流程
                 $('#improve').find('span').eq(1).remove();
-                $('#improve').append('<div style="display:none" class="no_record"><span>暂无记录</span></div>');
+                $('#improve').append('<div class="no_record"><span>暂无记录</span></div>');
                 console.log(error);
             }
         });

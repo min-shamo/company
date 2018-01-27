@@ -621,7 +621,7 @@ ul{
 #RandP_body{
     position: relative;
 }
-#RandP_body span{
+#RandP_body span:first-child{
     display: inline-block;
     position: absolute;
     left: 0.24rem;
@@ -634,16 +634,17 @@ ul{
 }
 .R_list,
 .p_list{
-    margin: 0rem 0em 0rem 1.4rem;
+    margin: 0rem 0em 0rem 1.25rem;
     padding: 0.30rem 0.34rem;
     display: inline-block;
     border-bottom: 1px solid #eee;
-    width:100%;
+    width:74%;
 }
 .R_list li,
 .p_list li{
     display: inline-block;
-    margin-right: 0.58rem;
+    margin-right: 0.25rem;
+    text-align: center;
 }
 .R_list li:nth-child(4n),
 .p_list li:nth-child(4n){
@@ -651,11 +652,20 @@ ul{
 }
 .R_list li:nth-child(4n+5),
 .p_list li:nth-child(4n+5){
-    margin-top: 0.20rem;
+    margin-top: 0.40rem;
 }
 .R_list img,
 .p_list img{
     height: 0.9rem;
     width: 0.9rem;
+}
+.R_name,
+.P_name{
+    font-size: 0.26rem;
+    color: #333333;
+    width:1.2rem;
+    margin: 0;
+    display: block;
+    margin-top: -0.08rem;
 }
 
