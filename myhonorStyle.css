@@ -225,9 +225,12 @@ div {
     padding-left:0.24rem;
     margin-top:0.20rem;    
 }
+#RandP_detail{
+    background:#fff;
+}
 .titles{
     font-size:0.28rem;
-    color:#27a2c4;
+    color:#000;
     line-height:0.86rem;
     margin-left: 0.1rem;
     vertical-align: middle;
@@ -284,13 +287,13 @@ vertical-align: middle
 }
 .law_title{
     float: left;
-    width: 20%;
+    width: 12%;
     display: block;
+    font-size:0.24rem;
 }
 .date{
     color:#000;
     font-size:0.26rem;
-    width:1.6rem; 
 }
 .name_R{
     color:#f15a4a;
@@ -327,9 +330,9 @@ vertical-align: middle
 .law_info{
     font-size:0.24rem;
     color:#000;
-    padding-right: 0.6rem;
+    padding-right: 0.2rem;
     display: block;
-    width: 70%;
+    width: 80%;
     float: left;
 }
 .reason{
@@ -355,9 +358,10 @@ vertical-align: middle
     font-size:0.24rem;color:#000
 }
 .man{
-    margin-top:0.24rem;
     display: -webkit-box;display: -ms-flexbox;display: flex;
     flex-direction:row-reverse;
+    font-size: 0.26rem;
+    margin-left: 0.3rem;
 }
 #improve{
     margin-top:0.20rem;
@@ -571,7 +575,7 @@ vertical-align: middle
 .counts1,
 .counts2{
     font-size:0.26rem;
-    color:#27a2c4;
+    color:#000;
 }
 .title_img{
     vertical-align: middle;
@@ -668,4 +672,15 @@ ul{
     display: block;
     margin-top: -0.08rem;
 }
-
+.name{
+    margin-top: 0.2rem;
+    font-size: 0.28rem;
+    clear: both;
+    background: #fff;
+    height: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+.name span{
+    margin: 0.24rem;
+    line-height: 0.8rem;
+}

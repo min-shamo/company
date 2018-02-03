@@ -997,11 +997,11 @@
                             }
                         }
                         if (obj[i].count > 0 && i < 8) {
-                            $('.R_list').append('<li><div style="position:relative;"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="Prize.html?OA='+obj[i].img+'"><span class="R_name">'+obj[i].name+'</span></div></li>');
+                            $('.R_list').append('<li><div style="position:relative;"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="OAdetail.html?OA='+obj[i].img+'"><span class="R_name">'+obj[i].name+'</span></div></li>');
                             R_times+=obj[i].count;
                         }
                         else if (obj[i].count > 0 && i >= 8) {
-                            $('.p_list').append('<li><div style="position:relative;"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="Prize.html?OA='+obj[i].img+'"><span class="P_name">'+obj[i].name+'</span></div></li>');
+                            $('.p_list').append('<li><div style="position:relative;"><div class="count">' + obj[i].count + '</div><img src="./image_myhonor/icon_' + obj[i].img + '.png" onclick=window.location.href="OAdetail.html?OA='+obj[i].img+'"><span class="P_name">'+obj[i].name+'</span></div></li>');
                             P_times+=obj[i].count;
                         }
                     }
